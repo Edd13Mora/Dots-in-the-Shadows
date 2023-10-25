@@ -61,5 +61,5 @@ When the trial ends, Netflix will send an email requesting an update to the paym
 
 You can check this amazing article about a scam using this technique : [The dots do matter: how to scam a Gmail user (jameshfisher.com)](https://jameshfisher.com/2018/04/07/the-dots-do-matter-how-to-scam-a-gmail-user/)
 
-##Conclusion
+## Conclusion
 In our digital age, it's often the smallest details, like a simple dot, that reveal the most significant vulnerabilities. As we embrace technology's conveniences, we must remain vigilant, ensuring that such nuances don't become gateways to unintended consequences.

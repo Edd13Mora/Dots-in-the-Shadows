@@ -1,7 +1,7 @@
 # Dots in the Shadows - Unraveling the Gmail Loophole
 
 <p align="center">
-  <img src="images/0.png" alt="">
+  <img src="images/0.png" alt="Alternate Text" width="600"/>
 </p>
 
 In 2015, as I sat at my laptop sifting through emails, one particular message caught my eye. It was from a well-known government tax system, which was puzzling since I'd never registered with them. I was underage and a student at the time, so why would I be involved with taxes?
@@ -12,7 +12,10 @@ Curiosity piqued, I clicked the link and was promptly directed to a page prompti
 
 The full name matched, but the birth year was 1979, and the profile claimed I was married with four children. Moreover, the address was foreign to me.
 
-![Alternate Text](images/1.png)
+<p align="center">
+  <img src="images/1.png" alt="Alternate Text" width="600"/>
+</p>
+
 A whirlwind of questions stormed my mind. Could there be someone in my county with an identical name? It seemed improbable but not impossible. But then, why was the activation email sent to me? Was it an error?
 
 Digging deeper, I revisited the profile's email address. It read: Name(.)Lastname@gmail.com, strikingly similar to my own email, which was NameLastname@gmail.com. The only difference? A single dot between the name and surname.
@@ -21,20 +24,26 @@ This discovery dismissed the notion of a simple clerical error. It wasn't my ema
 
 But how could this be? What made this seemingly different email address redirect to my personal inbox?
 Honestly I had no Ideas till i found this :
-![Alternate Text](images/3.png)
+<p align="center">
+  <img src="images/3.png" alt="Alternate Text" width="600"/>
+</p>
 This phenomenon is known as canonicalization. It's the process of converting data into a standard, normalized format. This practice is prevalent in programming to manage and streamline varied input formats that might otherwise lead to issues.
 
 I suspect Gmail employs this canonicalization to combat fraud and identity theft. Without this system in place, impersonation would be much simpler. For instance, one could pose as John Smith using the email john.smith.@gmail.com, which could easily be mistaken for the legitimate john.smith@gmail.com by those familiar with the latter.
 
 Before diving into how this feature could potentially be exploited, let's first understand why I received that email:
-![Alternate Text](images/4.png)
+<p align="center">
+  <img src="images/4.png" alt="Alternate Text" width="600"/>
+</p>
 Firstly, the tax service appears to gather individual data, possibly through various methods. The crucial point is that after this data collection, they construct user profiles on their platform. They then generate email addresses for these accounts based on the user's first and last name, separated by a DOT.
 
 By sheer coincidence, one of their users shared my name. Consequently, an email was created based on this name. Unfortunately for them (and rather perplexingly for me), I had already registered with that exact email address. Due to Gmail's unique feature, I ended up being the recipient of notifications intended for that individual.
 
 Clear enough, now lets use the hacker mind set and discover how this feature can be abused 
 
-![Alternate Text](images/5.png)
+<p align="center">
+  <img src="images/5.png" alt="Alternate Text" width="600"/>
+</p>
 
 Now that we understand Gmail doesn't differentiate between dot placements in email addresses, it becomes clear that example@gmail.com, exma.ple@gmail.com, and e.x.a.m.p.l.e@gmail.com all direct to the same inbox. This realization opens up potential avenues for misuse:
 
